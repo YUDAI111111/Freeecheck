@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>freee Matcher</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>freee Matcher</h1>
+      <p class="note">拡張の詳細機能</p>
+
+      <div class="row">
+        <button id="toggle-hide" class="btn btn-toggle">不一致のみ表示</button>
+      </div>
+      <button id="open-dict" class="btn">辞書管理を開く</button>
+      <button id="copy-debug" class="btn">デバッグ情報をコピー</button>
+      <div class="row">
+        <button id="export-json" class="btn btn-sub">JSONエクスポート</button>
+      </div>
+      <div class="row">
+        <button id="import-file" class="btn btn-sub">インポート</button>
+        <input id="file-input" type="file" accept=".json,.csv" hidden>
+      </div>
+
+      <p id="status" class="status"></p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
